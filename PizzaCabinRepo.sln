@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCIMeetingTool.API", "PCIMeetingTool.API\PCIMeetingTool.API.csproj", "{DFF96A9B-0D76-42D0-BE63-CC85E677781F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCIMeetingTool.UnitTests", "PCIMeetingTool.UnitTests\PCIMeetingTool.UnitTests.csproj", "{C7CE6920-4C80-489D-8059-BEF6DC600CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFF96A9B-0D76-42D0-BE63-CC85E677781F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF96A9B-0D76-42D0-BE63-CC85E677781F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF96A9B-0D76-42D0-BE63-CC85E677781F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF96A9B-0D76-42D0-BE63-CC85E677781F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7CE6920-4C80-489D-8059-BEF6DC600CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CE6920-4C80-489D-8059-BEF6DC600CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CE6920-4C80-489D-8059-BEF6DC600CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CE6920-4C80-489D-8059-BEF6DC600CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5FBE195-BDF2-46CF-BDD7-09455C8FB401}
+	EndGlobalSection
+EndGlobal
