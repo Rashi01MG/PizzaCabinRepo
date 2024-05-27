@@ -7,4 +7,4 @@
 - API specification available at : https://localhost:44393/swagger/index.html
 
 We are assuming that the TeamSchedule.json is received from an external REST API and stored in our solution in the Data folder.
-Adding to this solution, we can also make the actual HTTP calls and mock calls to the REST API which return the JSON.
+Adding to this solution, we can also make the actual HTTP calls and mock calls to the REST API which returns the JSON.
