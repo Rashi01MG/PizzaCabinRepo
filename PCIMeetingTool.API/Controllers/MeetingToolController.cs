@@ -13,6 +13,8 @@ namespace PCIMeetingTool.API.Controllers
         {
         }
 
+        [Route("GetDeserializedTeamSchedule")]
+        [HttpGet]
         public ScheduleRoot GetDeserializedTeamSchedule()
         {
             //Assuming the Json object from the external REST API is stored in 'Data' folder         
@@ -26,6 +28,8 @@ namespace PCIMeetingTool.API.Controllers
             return teamMemberSchedule;
         }
 
+        [Route("GetWorkingHoursForTeamMembers")]
+        [HttpGet]
         public List<TeamMemberWorkSchedule> GetWorkingHoursForTeamMembers()
         {
             var teamSchedule = GetDeserializedTeamSchedule();
@@ -60,7 +64,9 @@ namespace PCIMeetingTool.API.Controllers
             return teamMemberWorkScheduleList;
         }
 
-        public IActionResult GetStandUptimingsForTeamMembers(int requiredTeamMembers)
+        [Route("GetStandUptimingsForTeamMembers/{requiredTeamMembersCount}")]
+        [HttpGet]
+        public IActionResult GetStandUptimingsForTeamMembers(int requiredTeamMembersCount)
         {
             try
             {
@@ -119,11 +125,11 @@ namespace PCIMeetingTool.API.Controllers
                 }
                 else
                 {
-                    var finalStandUpList = standUpDataList.Where(x => x.TeamMembercount == requiredTeamMembers).ToList();
+                    var finalStandUpList = standUpDataList.Where(x => x.TeamMembercount == requiredTeamMembersCount).ToList();
 
                     if (!finalStandUpList.Any())
                     {
-                        return NotFound($"No suitable stand up timings found where {requiredTeamMembers} team members are available.");
+                        return NotFound($"No suitable stand up timings found where {requiredTeamMembersCount} team members are available.");
                     }
                     else
                     {
